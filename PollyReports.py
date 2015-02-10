@@ -172,7 +172,7 @@ class Element(object):
         if self.key is not None:
             return row[self.key]
         if self.text is not None:
-            return self.text.encode('utf8')
+            return self.text
         if self.sysvar is not None:
             return getattr(self.report, self.sysvar)
         return None
